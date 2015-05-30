@@ -28,6 +28,7 @@ gem 'spring', group: :development
 
 group :production do
 	gem 'pg'
+	gem 'heroku'
 end
 
 #for Authentication
