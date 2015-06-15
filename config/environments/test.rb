@@ -23,12 +23,6 @@ Rails.application.configure do
   # Raise exceptions instead of rendering exception templates.
   config.action_dispatch.show_exceptions = false
 
-  config.assets.enabled = true
-
-  config.assets.initialize_on_precompile = true
-  config.assets.precompile = ['*.js', '*.css','*.scss','*.ttf','*.eot','*.svg','*.woff']
-  config.assets.precompile << /(^[^_\/]|\/[^_])[^\/]*$/
-
   # Disable request forgery protection in test environment.
   config.action_controller.allow_forgery_protection = false
 
