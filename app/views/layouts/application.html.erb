@@ -81,12 +81,15 @@
   <h4><small>Copyright © 2015 <strong>Madarwala Enterprise</strong>. All Rights Reserved. Powered by FreeHosting</small></h4>
 </div>
 
+<%= render partial: 'shared/google_analytics' %>
+
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+ 
 <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '1462739584024922',
+      appId      : "<%=RAILS_ENV['FACEBOOK_ID'] %>",
       xfbml      : true,
       version    : 'v2.3'
     });
